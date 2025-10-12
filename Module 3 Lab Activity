@@ -1,0 +1,44 @@
+#Name: Divyang Parikh
+#Date: 10/12/2025
+# Problem 1 – Print "Hello World"
+print("Hello World")
+
+#Program 2 - asks the user for their name and greets them with their name.
+name = input("What is your name? ")
+print(f"Hello, {name}! Nice to meet you!")
+
+# Problem 3 – Greet only specific users (Me and instructor)
+name = input("Enter your name: ")
+
+if name == "Divyang" or name == "Antonio":
+    print(f"Hello {name}, welcome back!")
+else:
+    print("Access denied. You are not an authorized user.")
+
+#Problem 4 – Compute the area of a circle
+# Formula: Area = π * r^2
+import math
+
+radius = float(input("Enter the radius of the circle: "))
+area = math.pi * radius ** 2
+print(f"The area of the circle with radius {radius} is {area:.2f} square units.")
+
+#Problem 5 – Compute MPG (Miles Per Gallon)
+miles = float(input("Enter the number of miles driven: "))
+gallons = float(input("Enter the number of gallons used: "))
+
+mpg = miles / gallons
+print(f"Your car's fuel efficiency is {mpg:.2f} miles per gallon (MPG).")
+
+#Problem 6 – Convert Fahrenheit to Celsius
+fahrenheit = float(input("Enter temperature in Fahrenheit: "))
+celsius = (fahrenheit - 32) * 5 / 9
+print(f"{fahrenheit:.1f}°F is equal to {celsius:.1f}°C.")
+
+# Problem 7 – Determine return day of the week
+# 0 = Sunday, 6 = Saturday
+start_day = int(input("Enter starting day number (0=Sun, 6=Sat): "))
+stay_length = int(input("Enter length of stay in nights: "))
+
+return_day = (start_day + stay_length) % 7
+print(f"You will return on day number {return_day}.")
