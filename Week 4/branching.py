@@ -1,0 +1,19 @@
+# A time traveler has suddenly appeared in your classroom!
+
+# Create a variable representing the traveler's
+# year of origin (e.g., year = 2000)
+# and greet our strange visitor with a different message
+# if he is from the distant past (before 1900),
+# the present era (1900-2020) or from the far future (beyond 2020).
+
+#Author: Divyang Parikh
+#Date: 10/19/25
+
+year = int(input("Greetings! What is your year of origin? "))  # Telling user to enter his year of birth
+
+if year < 1900:                                        # Telling system to recognize the entered year and tell past, present or future
+    print ("Woah, that's the past!")
+elif 1900 <= year <= 2020:
+    print ("That's totally the present!")
+else:
+    print ("Far out, that's the future!!")
